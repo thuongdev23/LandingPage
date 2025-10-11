@@ -1,23 +1,38 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './Navbar';
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import About from "./About.jsx";
+import Contact from "./Contact.jsx";
+import Navbar from "./Navbar.jsx";
+import Experience from "./Experience.jsx";
+import Projects from "./Projects.jsx"
+const Home = () => {
   return (
     <>
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-      </Routes>
-    </BrowserRouter>      
-     
+    
      
     </>
-  )
-}
+  );
+};
 
-export default App
+  const App = () => {
+    return (
+    <>
+  
+    <Navbar />
+    <About/>
+    {/* <About/> */}
+   
+        <Routes>
+            <Route path="/about" Component={About}></Route>
+            <Route path="/experience" Component={Experience}></Route>
+            <Route path="/Projects" Component={Projects}></Route>
+            <Route path="/about" Component={Contact}></Route>
+
+        </Routes>
+   </>
+
+  );
+};
+
+export default App;
