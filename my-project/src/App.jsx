@@ -24,7 +24,7 @@ const Home = () => {
     {/* <About/> */}
    
         <Routes>
-            <Route path="/about" Component={About}></Route>
+            <Route path="/about" comp></Route>
             <Route path="/experience" Component={Experience}></Route>
             <Route path="/Projects" Component={Projects}></Route>
             <Route path="/about" Component={Contact}></Route>
