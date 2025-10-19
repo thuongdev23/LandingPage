@@ -24,10 +24,10 @@ const Home = () => {
     {/* <About/> */}
    
         <Routes>
-            <Route path="/about" comp></Route>
+            {/* <Route path="/about" comp></Route> */}
             <Route path="/experience" Component={Experience}></Route>
             <Route path="/Projects" Component={Projects}></Route>
-            <Route path="/about" Component={Contact}></Route>
+            {/* <Route path="/about" Component={Contact}></Route> */}
 
         </Routes>
    </>
